@@ -5,7 +5,7 @@
 
 #### 사용 언어 : Python<br/>구현 환경 : Visual Code 1.34.0
 
-#### Detail
+## Detail
 * 평가함수 직접 작성
 * 알파고 알고리즘 구현
   > Min-Max Algorithm, Alph-Beta Pruning
@@ -27,3 +27,9 @@ pygame, sys, random, numpy, copy, enum
 * Enum 
   > 서로 관련 있는 상수들을 모아서 클래스처럼 명칭의 집합으로 정의할 수 있는 모듈이다. <br/>
   > ‘conda install -c menpo enum’ 명령어를 통해서 설치했다.
+
+#### Min-Max Algorithm
+나(인공지능)의 차례일 때, 내가 이길 확률이 Max가 되는 수를 선택하고<br/> 상대방의 차례일 때, 내가 이길 확률이 Min이 되는 수를 선택하며 정해진 깊이만큼의 모든 수를 확인하는 알고리즘
+
+#### Alpha-Beta Pruning
+Min-Max 알고리즘 구현 시, 모든 노드를 확인하면 너무 많은 시간이 소요되므로<br/>확인하지 않아도 되는 수를 가지치기 하는 방법이다.<br/>나의 차례일 때, 내가 질 확률이 높은 노드의 하위 트리는 확인하지 않아도 되므로 가지치고,<br/> 상대방의 차례일 때, 내가 이길 확률이 높은 노드의 하위 트리는 확인하지 않아도 되므로 가지친다.
